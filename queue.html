@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Queue Visualizer | DSA Visualizer Pro</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <div class="logo">
+
+        📚 DSA Visualizer
+
+    </div>
+
+    <button id="themeBtn">
+
+        🌙
+
+    </button>
+
+    <ul class="nav-links">
+
+        <li><a href="index.html">🏠 Home</a></li>
+
+        <li><a href="linear.html">📘 Linear</a></li>
+
+        <li><a href="nonlinear.html">🌳 Non-Linear</a></li>
+
+        <li><a href="algorithms.html">⚡ Algorithms</a></li>
+
+    </ul>
+
+</nav>
+
+<section class="hero">
+
+<h1>Queue Visualizer</h1>
+
+<p>
+
+Queue follows the
+<strong>FIFO (First In First Out)</strong>
+principle.
+
+</p>
+
+</section>
+
+<section class="controls">
+
+<input
+id="queueValue"
+type="number"
+placeholder="Enter Value">
+
+<button id="enqueueBtn">
+
+Enqueue
+
+</button>
+
+<button id="dequeueBtn">
+
+Dequeue
+
+</button>
+
+<button id="frontBtn">
+
+Front
+
+</button>
+
+<button id="clearBtn">
+
+Clear
+
+</button>
+
+<button id="randomBtn">
+
+Random
+
+</button>
+
+</section>
+
+<section class="visualizer">
+
+    <h2>Queue Visualization</h2>
+
+    <div id="queueContainer" class="queue-container">
+
+    </div>
+
+</section>
+
+<section class="panel">
+
+    <h2>Queue Information</h2>
+
+    <table>
+
+        <tr>
+            <td>Queue Size</td>
+            <td id="queueSize">0</td>
+        </tr>
+
+        <tr>
+            <td>Front</td>
+            <td id="queueFront">-</td>
+        </tr>
+
+        <tr>
+            <td>Rear</td>
+            <td id="queueRear">-</td>
+        </tr>
+
+        <tr>
+            <td>Capacity</td>
+            <td id="queueCapacity">0 / 10</td>
+        </tr>
+
+    </table>
+
+</section>
+
+<section class="panel">
+
+    <h2>Statistics</h2>
+
+    <table>
+
+        <tr>
+            <td>Enqueue Count</td>
+            <td id="enqueueCount">0</td>
+        </tr>
+
+        <tr>
+            <td>Dequeue Count</td>
+            <td id="dequeueCount">0</td>
+        </tr>
+
+        <tr>
+            <td>Front Count</td>
+            <td id="frontCount">0</td>
+        </tr>
+
+    </table>
+
+</section>
+
+<section class="panel">
+
+    <h2>Complexity</h2>
+
+    <table>
+
+        <tr>
+            <th>Operation</th>
+            <th>Time</th>
+        </tr>
+
+        <tr>
+            <td>Enqueue</td>
+            <td>O(1)</td>
+        </tr>
+
+        <tr>
+            <td>Dequeue</td>
+            <td>O(1)</td>
+        </tr>
+
+        <tr>
+            <td>Front</td>
+            <td>O(1)</td>
+        </tr>
+
+    </table>
+
+</section>
+
+<section class="panel">
+
+    <h2>History</h2>
+
+    <div id="queueHistory">
+
+        No operations yet.
+
+    </div>
+
+</section>
+
+<footer>
+
+    DSA Visualizer Pro
+
+</footer>
+
+<script src="js/queue.js"></script>
+<script src="js/theme.js"></script>
+
+</body>
+
+</html>
+

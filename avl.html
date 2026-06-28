@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>AVL Tree Visualizer</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<!-- ==========================
+     NAVBAR
+=========================== -->
+
+<nav class="navbar">
+
+    <div class="logo">
+
+        📚 DSA Visualizer
+
+    </div>
+
+    <button id="themeBtn">
+
+        🌙
+
+    </button>
+
+    <ul class="nav-links">
+
+        <li><a href="index.html">🏠 Home</a></li>
+
+        <li><a href="linear.html">📘 Linear</a></li>
+
+        <li><a href="nonlinear.html">🌳 Non-Linear</a></li>
+
+        <li><a href="algorithms.html">⚡ Algorithms</a></li>
+
+    </ul>
+
+</nav>
+
+<!-- ==========================
+     HERO
+=========================== -->
+
+<section class="hero">
+
+<h1>
+
+AVL Tree Visualizer
+
+</h1>
+
+<p>
+
+Self Balancing Binary Search Tree
+
+</p>
+
+</section>
+
+<!-- ==========================
+     CONTROLS
+=========================== -->
+
+<section class="controls">
+
+<input
+id="avlValue"
+type="number"
+placeholder="Enter Value">
+
+<button id="insertBtn">
+
+Insert
+
+</button>
+
+<button id="deleteBtn">
+
+Delete
+
+</button>
+
+<button id="searchBtn">
+
+Search
+
+</button>
+
+<button id="randomBtn">
+
+Random
+
+</button>
+
+<button id="clearBtn">
+
+Clear
+
+</button>
+
+</section>
+
+<!-- ==========================
+     TREE
+=========================== -->
+
+<section class="visualizer">
+
+<h2>
+
+AVL Tree
+
+</h2>
+
+<div id="avlTree">
+
+</div>
+
+</section>
+
+<!-- ==========================
+     TRAVERSALS
+=========================== -->
+
+<section class="controls">
+
+<button id="inorderBtn">
+
+Inorder
+
+</button>
+
+<button id="preorderBtn">
+
+Preorder
+
+</button>
+
+<button id="postorderBtn">
+
+Postorder
+
+</button>
+
+<button id="levelorderBtn">
+
+Level Order
+
+</button>
+
+</section>
+
+<section class="panel">
+
+<h2>
+
+Traversal Output
+
+</h2>
+
+<div id="traversalOutput">
+
+No Traversal Yet
+
+</div>
+
+</section>
+
+<!-- ==========================
+     STATISTICS
+=========================== -->
+
+<section class="panel">
+
+<h2>
+
+Statistics
+
+</h2>
+
+<table>
+
+<tr>
+
+<td>Total Nodes</td>
+
+<td id="nodeCount">
+
+0
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>Tree Height</td>
+
+<td id="treeHeight">
+
+0
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>Leaf Nodes</td>
+
+<td id="leafCount">
+
+0
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>Root Node</td>
+
+<td id="rootValue">
+
+-
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>Balance</td>
+
+<td id="balanceStatus">
+
+Balanced
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>Rotations</td>
+
+<td id="rotationCount">
+
+0
+
+</td>
+
+</tr>
+
+</table>
+
+</section>
+
+<script src="js/avl.js"></script>
+
+<script src="js/theme.js"></script>
+
+</body>
+
+</html>

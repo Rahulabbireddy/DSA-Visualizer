@@ -1,0 +1,268 @@
+/* =====================================================
+   FADE IN
+===================================================== */
+
+@keyframes fadeIn {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(20px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+.fade-in {
+
+    animation: fadeIn .6s ease;
+
+}
+
+/* =====================================================
+   POP
+===================================================== */
+
+@keyframes pop {
+
+    0% {
+
+        transform: scale(.6);
+
+    }
+
+    70% {
+
+        transform: scale(1.15);
+
+    }
+
+    100% {
+
+        transform: scale(1);
+
+    }
+
+}
+
+.pop {
+
+    animation: pop .4s ease;
+
+}
+
+/* =====================================================
+   PULSE
+===================================================== */
+
+@keyframes pulse {
+
+    0% {
+
+        transform: scale(1);
+
+    }
+
+    50% {
+
+        transform: scale(1.15);
+
+    }
+
+    100% {
+
+        transform: scale(1);
+
+    }
+
+}
+
+.highlight {
+
+    animation: pulse .8s infinite;
+
+}
+
+/* =====================================================
+   SHAKE
+===================================================== */
+
+@keyframes shake {
+
+    0% {
+
+        transform: translateX(0);
+
+    }
+
+    25% {
+
+        transform: translateX(-5px);
+
+    }
+
+    50% {
+
+        transform: translateX(5px);
+
+    }
+
+    75% {
+
+        transform: translateX(-5px);
+
+    }
+
+    100% {
+
+        transform: translateX(0);
+
+    }
+
+}
+
+.shake {
+
+    animation: shake .35s;
+
+}
+
+/* =====================================================
+   BOUNCE
+===================================================== */
+
+@keyframes bounce {
+
+    0% {
+
+        transform: translateY(0);
+
+    }
+
+    50% {
+
+        transform: translateY(-12px);
+
+    }
+
+    100% {
+
+        transform: translateY(0);
+
+    }
+
+}
+
+.bounce {
+
+    animation: bounce .5s;
+
+}
+
+/* =====================================================
+   ROTATE
+===================================================== */
+
+@keyframes rotate360 {
+
+    from {
+
+        transform: rotate(0deg);
+
+    }
+
+    to {
+
+        transform: rotate(360deg);
+
+    }
+
+}
+
+.rotate {
+
+    animation: rotate360 .8s linear;
+
+}
+
+/* =====================================================
+   FOUND
+===================================================== */
+
+.found {
+
+    background: #22c55e !important;
+
+    color: white !important;
+
+}
+
+/* =====================================================
+   DELETE
+===================================================== */
+
+@keyframes deleteAnimation {
+
+    from {
+
+        opacity: 1;
+
+        transform: scale(1);
+
+    }
+
+    to {
+
+        opacity: 0;
+
+        transform: scale(.3);
+
+    }
+
+}
+
+.delete-animation {
+
+    animation: deleteAnimation .35s forwards;
+
+}
+
+/* =====================================================
+   INSERT
+===================================================== */
+
+@keyframes insertAnimation {
+
+    from {
+
+        transform: scale(.3);
+
+        opacity: 0;
+
+    }
+
+    to {
+
+        transform: scale(1);
+
+        opacity: 1;
+
+    }
+
+}
+
+.insert-animation {
+
+    animation: insertAnimation .35s;
+
+}
+

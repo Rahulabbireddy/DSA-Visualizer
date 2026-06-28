@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Stack Visualizer | DSA Visualizer Pro</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <div class="logo">
+
+        📚 DSA Visualizer
+
+    </div>
+
+    <button id="themeBtn">
+
+        🌙
+
+    </button>
+
+    <ul class="nav-links">
+
+        <li><a href="index.html">🏠 Home</a></li>
+
+        <li><a href="linear.html">📘 Linear</a></li>
+
+        <li><a href="nonlinear.html">🌳 Non-Linear</a></li>
+
+        <li><a href="algorithms.html">⚡ Algorithms</a></li>
+
+    </ul>
+
+</nav>
+
+<section class="hero">
+
+<h1>Stack Visualizer</h1>
+
+<p>
+
+A Stack follows the <strong>LIFO (Last In First Out)</strong> principle.
+
+</p>
+
+</section>
+
+<section class="controls">
+
+<input
+id="stackValue"
+type="number"
+placeholder="Enter Value">
+
+<button id="pushBtn">
+
+Push
+
+</button>
+
+<button id="popBtn">
+
+Pop
+
+</button>
+
+<button id="peekBtn">
+
+Peek
+
+</button>
+
+<button id="clearBtn">
+
+Clear
+
+</button>
+
+<button id="randomBtn">
+
+Random
+
+</button>
+
+</section>
+
+<section class="visualizer">
+
+<h2>Stack Visualization</h2>
+
+<div id="stackContainer" class="stack-container">
+
+</div>
+
+</section>
+
+<section class="panel">
+
+<h2>Stack Information</h2>
+
+<table>
+
+<tr>
+
+<td>Stack Size</td>
+
+<td id="stackSize">0</td>
+
+</tr>
+
+<tr>
+
+<td>Top Element</td>
+
+<td id="stackTop">-</td>
+
+</tr>
+
+<tr>
+
+<td>Status</td>
+
+<td id="stackStatus">Empty</td>
+
+</tr>
+
+<tr>
+
+<td>Capacity</td>
+
+<td id="stackCapacity">0 / 10</td>
+
+</tr>
+
+</table>
+
+</section>
+
+<section class="panel">
+
+<h2>Statistics</h2>
+
+<table>
+
+<tr>
+
+<td>Push Count</td>
+
+<td id="pushCount">0</td>
+
+</tr>
+
+<tr>
+
+<td>Pop Count</td>
+
+<td id="popCount">0</td>
+
+</tr>
+
+<tr>
+
+<td>Peek Count</td>
+
+<td id="peekCount">0</td>
+
+</tr>
+
+</table>
+
+</section>
+
+<section class="panel">
+
+<h2>Complexity</h2>
+
+<table>
+
+<tr>
+
+<th>Operation</th>
+
+<th>Time</th>
+
+</tr>
+
+<tr>
+
+<td>Push</td>
+
+<td>O(1)</td>
+
+</tr>
+
+<tr>
+
+<td>Pop</td>
+
+<td>O(1)</td>
+
+</tr>
+
+<tr>
+
+<td>Peek</td>
+
+<td>O(1)</td>
+
+</tr>
+
+</table>
+
+</section>
+
+<section class="panel">
+
+<h2>History</h2>
+
+<div id="stackHistory">
+
+No operations yet.
+
+</div>
+
+</section>
+
+<footer>
+
+DSA Visualizer Pro
+
+</footer>
+
+<script src="js/stack.js"></script>
+<script src="js/theme.js"></script>
+
+</body>
+
+</html>
+

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Sorting Visualizer</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <div class="logo">
+
+        📚 DSA Visualizer
+
+    </div>
+
+    <button id="themeBtn">
+
+        🌙
+
+    </button>
+
+    <ul class="nav-links">
+
+        <li><a href="index.html">🏠 Home</a></li>
+
+        <li><a href="linear.html">📘 Linear</a></li>
+
+        <li><a href="nonlinear.html">🌳 Non-Linear</a></li>
+
+        <li><a href="algorithms.html">⚡ Algorithms</a></li>
+
+    </ul>
+
+</nav>
+
+<section class="hero">
+
+    <h1>
+
+        Sorting Visualizer
+
+    </h1>
+
+    <p>
+
+        Visualize Bubble, Selection, Insertion,
+        Merge, Quick and Heap Sorting Algorithms
+
+    </p>
+
+</section>
+
+<section class="controls">
+
+    <select id="algorithm">
+
+        <option value="bubble">
+            Bubble Sort
+        </option>
+
+        <option value="selection">
+            Selection Sort
+        </option>
+
+        <option value="insertion">
+            Insertion Sort
+        </option>
+
+        <option value="merge">
+            Merge Sort
+        </option>
+
+        <option value="quick">
+            Quick Sort
+        </option>
+
+        <option value="heap">
+            Heap Sort
+        </option>
+
+    </select>
+
+    <input
+        id="arrayInput"
+        type="text"
+        placeholder="Example: 8,4,6,1,9">
+
+    <button id="generateBtn">
+
+        Generate
+
+    </button>
+
+    <button id="startBtn">
+
+        Start
+
+    </button>
+
+    <button id="pauseBtn">
+
+        Pause
+
+    </button>
+
+    <button id="resumeBtn">
+
+        Resume
+
+    </button>
+
+    <button id="resetBtn">
+
+        Reset
+
+    </button>
+
+</section>
+
+<section class="visualizer">
+
+    <h2>
+
+        Array Visualization
+
+    </h2>
+
+    <div id="arrayContainer">
+
+    </div>
+
+</section>
+
+<section class="panel">
+
+<h2>
+
+Statistics
+
+</h2>
+
+<table>
+
+<tr>
+<td>Comparisons</td>
+<td id="comparisonCount">0</td>
+</tr>
+
+<tr>
+<td>Swaps</td>
+<td id="swapCount">0</td>
+</tr>
+
+<tr>
+<td>Algorithm</td>
+<td id="currentAlgorithm">-</td>
+</tr>
+
+<tr>
+<td>Status</td>
+<td id="sortStatus">Idle</td>
+</tr>
+
+</table>
+
+</section>
+
+<section class="panel">
+
+<h2>
+
+Complexity
+
+</h2>
+
+<table>
+
+<tr>
+<td>Time Complexity</td>
+<td id="timeComplexity">-</td>
+</tr>
+
+<tr>
+<td>Space Complexity</td>
+<td id="spaceComplexity">-</td>
+</tr>
+
+</table>
+
+</section>
+
+
+
+
+<section class="panel">
+
+<h2>
+
+Sorting Controls
+
+</h2>
+
+<div class="slider-group">
+
+<label>
+
+Animation Speed
+
+</label>
+
+<input
+type="range"
+id="speedSlider"
+min="1"
+max="100"
+value="50">
+
+<span id="speedValue">
+
+50%
+
+</span>
+
+</div>
+
+<div class="slider-group">
+
+<label>
+
+Array Size
+
+</label>
+
+<input
+type="range"
+id="sizeSlider"
+min="5"
+max="50"
+value="20">
+
+<span id="sizeValue">
+
+20
+
+</span>
+
+</div>
+
+</section>
+
+<section class="panel">
+
+<h2>
+
+Algorithm Description
+
+</h2>
+
+<p id="algorithmDescription">
+
+Choose a sorting algorithm to view its
+description and visualize how it works.
+
+</p>
+
+</section>
+
+<section class="panel">
+
+<h2>
+
+Current Step
+
+</h2>
+
+<div id="currentStep">
+
+Waiting to Start...
+
+</div>
+
+</section>
+
+<section class="panel">
+
+<h2>
+
+Legend
+
+</h2>
+
+<div class="legend">
+
+<div>
+
+<span class="legend-box default-box"></span>
+
+Normal
+
+</div>
+
+<div>
+
+<span class="legend-box compare-box"></span>
+
+Comparing
+
+</div>
+
+<div>
+
+<span class="legend-box swap-box"></span>
+
+Swapping
+
+</div>
+
+<div>
+
+<span class="legend-box sorted-box"></span>
+
+Sorted
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+<footer>
+
+    DSA Visualizer © 2026
+
+</footer>
+
+<script src="js/sorting.js"></script>
+
+<script src="js/theme.js"></script>
+
+<div id="toast"></div>
+
+</body>
+
+</html>
+

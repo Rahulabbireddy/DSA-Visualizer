@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Linear Data Structures | DSA Visualizer Pro</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#081120,#0f172a,#1e1b4b);
+background-size:400% 400%;
+animation:bgAnimation 12s ease infinite;
+color:white;
+overflow-x:hidden;
+min-height:100vh;
+}
+
+@keyframes bgAnimation{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+/* Floating Background */
+
+.circle{
+position:fixed;
+border-radius:50%;
+background:rgba(255,255,255,.08);
+animation:float 12s infinite linear;
+filter:blur(2px);
+}
+
+.c1{
+width:180px;
+height:180px;
+top:10%;
+left:5%;
+}
+
+.c2{
+width:120px;
+height:120px;
+right:10%;
+top:15%;
+animation-duration:16s;
+}
+
+.c3{
+width:220px;
+height:220px;
+bottom:5%;
+left:45%;
+animation-duration:20s;
+}
+
+@keyframes float{
+
+0%{
+transform:translateY(0) rotate(0deg);
+}
+
+50%{
+transform:translateY(-35px) rotate(180deg);
+}
+
+100%{
+transform:translateY(0) rotate(360deg);
+}
+
+}
+
+/* Navbar */
+
+nav{
+
+position:sticky;
+top:0;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:18px 8%;
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(15px);
+
+border-bottom:1px solid rgba(255,255,255,.1);
+
+z-index:999;
+
+}
+
+.logo{
+
+font-size:28px;
+
+font-weight:800;
+
+background:linear-gradient(45deg,#00e5ff,#7c3aed,#00ff9d);
+
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+
+}
+
+.back-btn{
+
+padding:12px 25px;
+
+background:linear-gradient(45deg,#00c6ff,#7c3aed);
+
+border:none;
+
+border-radius:40px;
+
+color:white;
+
+font-weight:bold;
+
+cursor:pointer;
+
+transition:.4s;
+
+}
+
+.back-btn:hover{
+
+transform:translateY(-5px);
+
+box-shadow:0 15px 25px rgba(0,229,255,.4);
+
+}
+
+/* Hero */
+
+.hero{
+
+text-align:center;
+
+padding:70px 10%;
+
+}
+
+.hero h1{
+
+font-size:52px;
+
+margin-bottom:20px;
+
+background:linear-gradient(45deg,#00e5ff,#00ff95);
+
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+
+}
+
+.hero p{
+
+font-size:19px;
+
+line-height:1.8;
+
+color:#d7d7d7;
+
+max-width:900px;
+
+margin:auto;
+
+}
+
+/* Cards */
+
+.container{
+
+padding:60px 8%;
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+gap:35px;
+
+}
+
+.card{
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(15px);
+
+border-radius:25px;
+
+padding:30px;
+
+border:1px solid rgba(255,255,255,.12);
+
+transition:.5s;
+
+box-shadow:0 20px 40px rgba(0,0,0,.25);
+
+}
+
+.card:hover{
+
+transform:translateY(-12px) scale(1.03);
+
+box-shadow:0 25px 45px rgba(0,229,255,.35);
+
+}
+
+.card h2{
+
+font-size:28px;
+
+margin-bottom:15px;
+
+color:#00e5ff;
+
+}
+
+.card p{
+
+line-height:1.8;
+
+color:#ddd;
+
+margin-bottom:25px;
+
+}
+
+.card ul{
+
+margin-bottom:25px;
+
+padding-left:20px;
+
+}
+
+.card li{
+
+margin:8px 0;
+
+}
+
+.open-btn{
+
+padding:14px 30px;
+
+border:none;
+
+border-radius:40px;
+
+background:linear-gradient(45deg,#00e5ff,#7c3aed);
+
+color:white;
+
+font-weight:bold;
+
+cursor:pointer;
+
+transition:.4s;
+
+}
+
+.open-btn:hover{
+
+transform:scale(1.08);
+
+box-shadow:0 15px 30px rgba(0,229,255,.4);
+
+}
+
+footer{
+
+text-align:center;
+
+padding:40px;
+
+color:#aaa;
+
+font-size:15px;
+
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:36px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+nav{
+padding:15px 5%;
+}
+
+.logo{
+font-size:22px;
+}
+
+}
+
+/* Statistics */
+
+.stats{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:25px;
+
+padding:80px 8%;
+
+}
+
+.stat-box{
+
+background:rgba(255,255,255,.08);
+
+padding:35px;
+
+border-radius:20px;
+
+text-align:center;
+
+backdrop-filter:blur(15px);
+
+transition:.4s;
+
+}
+
+.stat-box:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 20px 40px rgba(0,229,255,.35);
+
+}
+
+.stat-box h1{
+
+font-size:50px;
+
+color:#00e5ff;
+
+margin-bottom:10px;
+
+}
+
+.stat-box p{
+
+font-size:18px;
+
+color:#ddd;
+
+}
+
+/* Footer */
+
+footer{
+
+padding:50px;
+
+text-align:center;
+
+background:rgba(255,255,255,.05);
+
+margin-top:60px;
+
+border-top:1px solid rgba(255,255,255,.1);
+
+}
+
+footer h2{
+
+color:#00e5ff;
+
+margin-bottom:15px;
+
+} 
+
+</style>
+</head>
+
+<body>
+
+<div class="circle c1"></div>
+<div class="circle c2"></div>
+<div class="circle c3"></div>
+
+<nav class="navbar">
+
+    <div class="logo">
+
+        📚 DSA Visualizer
+
+    </div>
+
+    <button id="themeBtn">
+
+        🌙
+
+    </button>
+
+    <ul class="nav-links">
+
+        <li><a href="index.html">🏠 Home</a></li>
+
+        <li><a href="linear.html">📘 Linear</a></li>
+
+        <li><a href="nonlinear.html">🌳 Non-Linear</a></li>
+
+        <li><a href="algorithms.html">⚡ Algorithms</a></li>
+
+    </ul>
+
+</nav>
+<section class="hero">
+
+<h1>📘 Linear Data Structures</h1>
+
+<p>
+
+A <strong>Linear Data Structure</strong> stores data sequentially.
+Each element is connected to the next element in a single line,
+making traversal simple and efficient.
+
+Choose any data structure below to start learning with
+beautiful animations and interactive visualizations.
+
+</p>
+
+</section>
+
+<section class="container">
+
+<div class="card">
+
+<h2>📦 Array</h2>
+
+<p>
+
+Stores elements in contiguous memory locations.
+Provides fast access using indexes.
+
+</p>
+
+<ul>
+
+<li>Insert</li>
+
+<li>Delete</li>
+
+<li>Search</li>
+
+<li>Update</li>
+
+<li>Reverse</li>
+
+<li>Rotate</li>
+
+<li>Sort</li>
+
+</ul>
+
+<button class="open-btn">
+Open Visualizer
+</button>
+
+</div>
+
+<div class="card">
+
+<h2>📚 Stack</h2>
+
+<p>
+
+Follows the Last In First Out (LIFO) principle.
+
+</p>
+
+<ul>
+
+<li>Push</li>
+
+<li>Pop</li>
+
+<li>Peek</li>
+
+<li>isEmpty</li>
+
+<li>Clear</li>
+
+</ul>
+
+<button class="open-btn">
+Open Visualizer
+</button>
+
+</div>
+
+<div class="card">
+
+<h2>🚶 Queue</h2>
+
+<p>
+
+Follows the First In First Out (FIFO) principle.
+
+</p>
+
+<ul>
+
+<li>Enqueue</li>
+
+<li>Dequeue</li>
+
+<li>Front</li>
+
+<li>Rear</li>
+
+<li>Clear</li>
+
+</ul>
+
+<button class="open-btn">
+Open Visualizer
+</button>
+
+</div>
+
+<div class="card">
+
+<h2>🔗 Linked List</h2>
+
+<p>
+
+A collection of nodes connected using pointers.
+
+</p>
+
+<ul>
+
+<li>Insert</li>
+
+<li>Delete</li>
+
+<li>Search</li>
+
+<li>Reverse</li>
+
+<li>Traverse</li>
+
+</ul>
+
+<button class="open-btn">
+Open Visualizer
+</button>
+
+</div>
+
+</section>
+
+
+<!-- ===========================
+     STATISTICS SECTION
+============================ -->
+
+<section class="stats">
+
+    <div class="stat-box">
+        <h1>4</h1>
+        <p>Linear Data Structures</p>
+    </div>
+
+    <div class="stat-box">
+        <h1>25+</h1>
+        <p>Operations</p>
+    </div>
+
+    <div class="stat-box">
+        <h1>100%</h1>
+        <p>Interactive</p>
+    </div>
+
+    <div class="stat-box">
+        <h1>∞</h1>
+        <p>Learning</p>
+    </div>
+
+</section>
+
+<footer>
+
+<h2>🚀 DSA Visualizer Pro</h2>
+
+<p>
+
+Learn Data Structures through colorful
+interactive animations.
+
+</p>
+
+<p style="margin-top:20px;opacity:.7;">
+Made for Final Year Project
+</p>
+
+</footer>
+
+<script>
+
+// Array Button
+
+document.querySelectorAll(".open-btn")[0].onclick=function(){
+
+location.href="array.html";
+
+};
+
+// Stack Button
+
+document.querySelectorAll(".open-btn")[1].onclick=function(){
+
+location.href="stack.html";
+
+};
+
+// Queue Button
+
+document.querySelectorAll(".open-btn")[2].onclick=function(){
+
+location.href="queue.html";
+
+};
+
+// Linked List Button
+
+document.querySelectorAll(".open-btn")[3].onclick=function(){
+
+location.href="linkedlist.html";
+
+};
+
+// Card Animation
+
+const cards=document.querySelectorAll(".card");
+
+const observer=new IntersectionObserver(entries=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.style.opacity="1";
+
+entry.target.style.transform="translateY(0px)";
+
+}
+
+});
+
+});
+
+cards.forEach(card=>{
+
+card.style.opacity="0";
+
+card.style.transform="translateY(80px)";
+
+card.style.transition="1s";
+
+observer.observe(card);
+
+});
+
+</script>
+<script src="js/theme.js"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>Heap Visualizer</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <div class="logo">
+
+        📚 DSA Visualizer
+
+    </div>
+
+    <button id="themeBtn">
+
+        🌙
+
+    </button>
+
+    <ul class="nav-links">
+
+        <li><a href="index.html">🏠 Home</a></li>
+
+        <li><a href="linear.html">📘 Linear</a></li>
+
+        <li><a href="nonlinear.html">🌳 Non-Linear</a></li>
+
+        <li><a href="algorithms.html">⚡ Algorithms</a></li>
+
+    </ul>
+
+</nav>
+
+<section class="hero">
+
+<h1>Heap Visualizer</h1>
+
+<p>
+
+Min Heap / Max Heap Visualization
+
+</p>
+
+</section>
+
+<section class="controls">
+
+<input
+id="heapValue"
+type="number"
+placeholder="Enter Value">
+
+<button id="insertBtn">
+
+Insert
+
+</button>
+
+<button id="deleteBtn">
+
+Delete Root
+
+</button>
+
+<button id="searchBtn">
+
+Search
+
+</button>
+
+<button id="heapifyBtn">
+
+Heapify
+
+</button>
+
+<button id="randomBtn">
+
+Random
+
+</button>
+
+<button id="clearBtn">
+
+Clear
+
+</button>
+
+</section>
+
+<section class="visualizer">
+
+<h2>Heap Tree</h2>
+
+<div id="heapTree">
+
+</div>
+
+</section>
+
+<section class="visualizer">
+
+<h2>Heap Array</h2>
+
+<div id="heapArray">
+
+</div>
+
+</section>
+
+<section class="panel">
+
+<h2>Statistics</h2>
+
+<table>
+
+<tr>
+
+<td>Total Nodes</td>
+
+<td id="nodeCount">0</td>
+
+</tr>
+
+<tr>
+
+<td>Height</td>
+
+<td id="heapHeight">0</td>
+
+</tr>
+
+<tr>
+
+<td>Swaps</td>
+
+<td id="swapCount">0</td>
+
+</tr>
+
+</table>
+
+</section>
+
+<script src="js/heap.js"></script>
+<script src="js/theme.js"></script>
+
+</body>
+
+</html>

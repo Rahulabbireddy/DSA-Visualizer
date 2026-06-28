@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Array Visualizer | DSA Visualizer Pro</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- Animated Background -->
+
+<div class="bg-circle c1"></div>
+<div class="bg-circle c2"></div>
+<div class="bg-circle c3"></div>
+
+<!-- Navbar -->
+
+<nav class="navbar">
+
+    <div class="logo">
+
+        📚 DSA Visualizer
+
+    </div>
+
+    <button id="themeBtn">
+
+        🌙
+
+    </button>
+
+    <ul class="nav-links">
+
+        <li><a href="index.html">🏠 Home</a></li>
+
+        <li><a href="linear.html">📘 Linear</a></li>
+
+        <li><a href="nonlinear.html">🌳 Non-Linear</a></li>
+
+        <li><a href="algorithms.html">⚡ Algorithms</a></li>
+
+    </ul>
+
+</nav>
+
+<!-- Hero -->
+
+<section class="hero">
+
+<h1>
+
+Array Visualizer
+
+</h1>
+
+<p>
+
+An Array stores elements in contiguous memory.
+
+Every element can be accessed using its index.
+
+</p>
+
+</section>
+
+<!-- Information -->
+
+<section class="info">
+
+<div class="card">
+
+<h2>
+
+Definition
+
+</h2>
+
+<p>
+
+An array is a linear data structure used to store
+multiple values of the same data type.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>
+
+Time Complexity
+
+</h2>
+
+<p>
+
+Access : O(1)
+
+<br>
+
+Search : O(n)
+
+<br>
+
+Insert : O(n)
+
+<br>
+
+Delete : O(n)
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>
+
+Applications
+
+</h2>
+
+<p>
+
+Searching
+
+Sorting
+
+Dynamic Programming
+
+Graphs
+
+Matrices
+
+</p>
+
+</div>
+
+</section>
+
+<!-- Control Panel -->
+
+<section class="controls">
+
+<input
+
+id="value"
+
+type="number"
+
+placeholder="Value">
+
+<input
+
+id="index"
+
+type="number"
+
+placeholder="Index">
+
+<button id="insert">
+
+Insert
+
+</button>
+
+<button id="delete">
+
+Delete
+
+</button>
+
+<button id="search">
+
+Search
+
+</button>
+
+<button id="update">
+
+Update
+
+</button>
+
+<button id="reverse">
+
+Reverse
+
+</button>
+
+<button id="left">
+
+Rotate Left
+
+</button>
+
+<button id="right">
+
+Rotate Right
+
+</button>
+
+<button id="sort">
+
+Bubble Sort
+
+</button>
+
+<button id="reset">
+
+Reset
+
+</button>
+
+</section>
+
+<!-- Visualization -->
+
+<section class="visualizer">
+
+<h2>
+
+Visualization
+
+</h2>
+
+<div id="arrayContainer">
+
+</div>
+
+</section>
+
+<!-- Explanation -->
+
+<section class="panel">
+
+<h2>
+
+Step Explanation
+
+</h2>
+
+<p id="stepText">
+
+Ready...
+
+</p>
+
+</section>
+
+<!-- Console -->
+
+<section class="panel">
+
+<h2>
+
+Console
+
+</h2>
+
+<div id="console">
+
+Application Started...
+
+</div>
+
+</section>
+
+<!-- Code -->
+
+<section class="panel">
+
+<h2>
+
+Algorithm
+
+</h2>
+
+<pre id="codeBox">
+
+Waiting...
+
+</pre>
+
+</section>
+
+<!-- Complexity -->
+
+<section class="panel">
+
+<h2>
+
+Complexity
+
+</h2>
+
+<table>
+
+<tr>
+
+<th>Operation</th>
+
+<th>Complexity</th>
+
+</tr>
+
+<tr>
+
+<td>Access</td>
+
+<td>O(1)</td>
+
+</tr>
+
+<tr>
+
+<td>Search</td>
+
+<td>O(n)</td>
+
+</tr>
+
+<tr>
+
+<td>Insert</td>
+
+<td>O(n)</td>
+
+</tr>
+
+<tr>
+
+<td>Delete</td>
+
+<td>O(n)</td>
+
+</tr>
+
+</table>
+
+</section>
+
+<footer>
+
+DSA Visualizer Pro
+
+</footer>
+
+<script>
+
+console.log("HTML Loaded");
+
+</script>
+
+<script src="js/array.js"></script>
+
+
+<script src="js/theme.js"></script>
+
+
+</body>
+
+</html>

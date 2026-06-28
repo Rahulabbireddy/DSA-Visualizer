@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Graph Visualizer</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <div class="logo">
+
+        📚 DSA Visualizer
+
+    </div>
+
+    <button id="themeBtn">
+
+        🌙
+
+    </button>
+
+    <ul class="nav-links">
+
+        <li><a href="index.html">🏠 Home</a></li>
+
+        <li><a href="linear.html">📘 Linear</a></li>
+
+        <li><a href="nonlinear.html">🌳 Non-Linear</a></li>
+
+        <li><a href="algorithms.html">⚡ Algorithms</a></li>
+
+    </ul>
+
+</nav>
+
+<section class="hero">
+
+    <h1>Graph Visualizer</h1>
+
+    <p>
+
+        Visualize Graph Operations,
+        BFS and DFS Traversals
+
+    </p>
+
+</section>
+
+<section class="controls">
+
+    <input
+        id="vertexInput"
+        type="text"
+        placeholder="Vertex">
+
+    <input
+        id="fromInput"
+        type="text"
+        placeholder="From">
+
+    <input
+        id="toInput"
+        type="text"
+        placeholder="To">
+
+    <button id="addVertexBtn">
+
+        Add Vertex
+
+    </button>
+
+    <button id="removeVertexBtn">
+
+        Remove Vertex
+
+    </button>
+
+    <button id="addEdgeBtn">
+
+        Add Edge
+
+    </button>
+
+    <button id="removeEdgeBtn">
+
+        Remove Edge
+
+    </button>
+
+    <button id="bfsBtn">
+
+        BFS
+
+    </button>
+
+    <button id="dfsBtn">
+
+        DFS
+
+    </button>
+
+    <button id="randomBtn">
+
+    Random
+
+</button>
+
+    <button id="clearBtn">
+
+        Clear
+
+    </button>
+
+</section>
+
+<section class="visualizer">
+
+    <h2>Graph</h2>
+
+    <div id="graphCanvas">
+
+    </div>
+
+</section>
+
+<section class="panel">
+
+    <h2>Statistics</h2>
+
+    <table>
+
+        <tr>
+
+            <td>Total Vertices</td>
+
+            <td id="vertexCount">0</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Total Edges</td>
+
+            <td id="edgeCount">0</td>
+
+        </tr>
+
+        <tr>
+
+            <td>BFS Runs</td>
+
+            <td id="bfsCount">0</td>
+
+        </tr>
+
+        <tr>
+
+            <td>DFS Runs</td>
+
+            <td id="dfsCount">0</td>
+
+        </tr>
+
+    </table>
+
+</section>
+
+<section class="panel">
+
+    <h2>Time Complexity</h2>
+
+    <table>
+
+        <tr>
+
+            <td>Add Vertex</td>
+
+            <td>O(1)</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Add Edge</td>
+
+            <td>O(1)</td>
+
+        </tr>
+
+        <tr>
+
+            <td>BFS</td>
+
+            <td>O(V+E)</td>
+
+        </tr>
+
+        <tr>
+
+            <td>DFS</td>
+
+            <td>O(V+E)</td>
+
+        </tr>
+
+    </table>
+
+</section>
+
+<section class="panel">
+
+    <h2>Traversal Order</h2>
+
+    <div id="traversalOrder">
+
+        -
+
+    </div>
+
+</section>
+
+<section class="panel">
+
+    <h2>BFS Queue</h2>
+
+    <div id="queueBox">
+
+        Empty
+
+    </div>
+
+</section>
+
+<section class="panel">
+
+    <h2>DFS Stack</h2>
+
+    <div id="stackBox">
+
+        Empty
+
+    </div>
+
+</section>
+
+
+
+<section class="panel">
+
+    <h2>History</h2>
+
+    <ul id="historyList"></ul>
+
+</section>
+
+
+<footer>
+
+    DSA Visualizer © 2026
+
+</footer>
+
+<script src="js/graph.js"></script>
+
+<script src="js/theme.js"></script>
+
+</body>
+
+</html>
+

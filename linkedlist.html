@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Linked List Visualizer</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <div class="logo">
+
+        📚 DSA Visualizer
+
+    </div>
+
+    <button id="themeBtn">
+
+        🌙
+
+    </button>
+
+    <ul class="nav-links">
+
+        <li><a href="index.html">🏠 Home</a></li>
+
+        <li><a href="linear.html">📘 Linear</a></li>
+
+        <li><a href="nonlinear.html">🌳 Non-Linear</a></li>
+
+        <li><a href="algorithms.html">⚡ Algorithms</a></li>
+
+    </ul>
+
+</nav>
+
+<section class="hero">
+
+<h1>Linked List Visualizer</h1>
+
+<p>
+
+Visualize insertion, deletion and traversal of a Singly Linked List.
+
+</p>
+
+</section>
+
+<section class="controls">
+
+<input
+id="nodeValue"
+type="number"
+placeholder="Node Value">
+
+<input
+id="nodePosition"
+type="number"
+placeholder="Position">
+
+<button id="insertBegin">
+
+Insert Begin
+
+</button>
+
+<button id="insertEnd">
+
+Insert End
+
+</button>
+
+<button id="insertPos">
+
+Insert Position
+
+</button>
+
+<button id="deleteBegin">
+
+Delete Begin
+
+</button>
+
+<button id="deleteEnd">
+
+Delete End
+
+</button>
+
+<button id="deletePos">
+
+Delete Position
+
+</button>
+
+<button id="searchBtn">
+
+Search
+
+</button>
+
+<button id="reverseBtn">
+
+Reverse
+
+</button>
+
+<button id="clearBtn">
+
+Clear
+
+</button>
+
+</section>
+
+<section class="visualizer">
+
+    <h2>Linked List Visualization</h2>
+
+    <div id="linkedListContainer" class="linkedlist-container">
+
+    </div>
+
+</section>
+
+<section class="panel">
+
+    <h2>Linked List Information</h2>
+
+    <table>
+
+        <tr>
+            <td>Total Nodes</td>
+            <td id="totalNodes">0</td>
+        </tr>
+
+        <tr>
+            <td>Head</td>
+            <td id="headNode">NULL</td>
+        </tr>
+
+        <tr>
+            <td>Tail</td>
+            <td id="tailNode">NULL</td>
+        </tr>
+
+    </table>
+
+</section>
+
+<section class="panel">
+
+    <h2>Statistics</h2>
+
+    <table>
+
+        <tr>
+            <td>Insert Count</td>
+            <td id="insertCount">0</td>
+        </tr>
+
+        <tr>
+            <td>Delete Count</td>
+            <td id="deleteCount">0</td>
+        </tr>
+
+        <tr>
+            <td>Search Count</td>
+            <td id="searchCount">0</td>
+        </tr>
+
+    </table>
+
+</section>
+
+<section class="panel">
+
+    <h2>Time Complexity</h2>
+
+    <table>
+
+        <tr>
+
+            <th>Operation</th>
+
+            <th>Complexity</th>
+
+        </tr>
+
+        <tr>
+
+            <td>Insert</td>
+
+            <td>O(1) / O(n)</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Delete</td>
+
+            <td>O(1) / O(n)</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Search</td>
+
+            <td>O(n)</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Reverse</td>
+
+            <td>O(n)</td>
+
+        </tr>
+
+    </table>
+
+</section>
+
+<section class="panel">
+
+    <h2>History</h2>
+
+    <div id="historyBox">
+
+        No operations yet.
+
+    </div>
+
+</section>
+
+<footer>
+
+    DSA Visualizer Pro
+
+</footer>
+
+<script src="js/linkedlist.js"></script>
+<script src="js/theme.js"></script>
+
+</body>
+
+</html>
+
